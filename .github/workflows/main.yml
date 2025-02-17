@@ -38,6 +38,8 @@ jobs:
           echo "DATABASE_PASSWORD=${{ secrets.DB_PW }}" >> .env
           echo "MAIL_USERNAME=${{ secrets.MAIL_ID }}" >> .env
           echo "MAIL_PASSWORD=${{ secrets.MAIL_PW }}" >> .env
+          echo "REDIS_URL=${{ secrets.REDIS_URL }}" >> .env
+          echo "REDIS_PORT=${{ secrets.REDIS_PORT }}" >> .env
 
       - name: Build with Gradle
         working-directory: ./backend
