@@ -1,6 +1,6 @@
 import axios from 'axios';
  
-const DOMAIN = 'http://localhost:8080';
+const DOMAIN = process.env.REACT_APP_SERVER_IP;
 
 const API_ADMIN_DOMAIN = `${DOMAIN}/api/admin1`;
 const API_DOMAIN = `${DOMAIN}/api/v1`;

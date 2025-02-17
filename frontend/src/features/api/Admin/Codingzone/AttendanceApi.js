@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const DOMAIN = 'http://localhost:8080'; 
+const DOMAIN = process.env.REACT_APP_SERVER_IP;
  
 //17. 1학년 출/결석 처리 API 
 export const putczattendc1Request = async (registNum,accessToken) => {

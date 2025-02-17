@@ -1,7 +1,7 @@
 
 import axios from 'axios';
 
-const DOMAIN = 'http://localhost:8080';
+const DOMAIN = process.env.REACT_APP_SERVER_IP;
 const API_DOMAIN = `${DOMAIN}/api/v1`;
 const GET_MYPAGE_USER_URL = () => `${API_DOMAIN}/user`; //마이페이지_개인정보 
 

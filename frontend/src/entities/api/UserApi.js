@@ -1,5 +1,5 @@
 import axios from 'axios';
-const DOMAIN = 'http://localhost:8080';
+const DOMAIN = process.env.REACT_APP_SERVER_IP;
 const API_DOMAIN = `${DOMAIN}/api/v1`;
 const DELETE_USER =()=> `${API_DOMAIN}/user`; //회원탈퇴 
 const SIGN_IN_URL = () => `${API_DOMAIN}/auth/sign-in`; //로그인

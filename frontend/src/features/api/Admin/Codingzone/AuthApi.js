@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const DOMAIN = 'http://localhost:8080'; 
+const DOMAIN = process.env.REACT_APP_SERVER_IP;
 const API_DOMAIN_ADMIN = `${DOMAIN}/api/admin`;
 //권한 부여 API
 export const grantPermission = async (email, role, token) => {
