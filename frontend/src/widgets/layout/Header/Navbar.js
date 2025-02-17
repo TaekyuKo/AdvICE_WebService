@@ -29,7 +29,7 @@ const NavBar = () => {
 
     const handleLogout = () => {
         setIsLoggedIn(false);
-        removeCookie('accessToken', { path: '/' }); // 경로 지정 주의
+        removeCookie('accessToken', { path: '/' }); // 경로 지정 주의5
         closeModal('mypage');
         setTimeout(() => {
             navigate('/');
